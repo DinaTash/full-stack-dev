@@ -3,4 +3,4 @@
 - Развлечения: Pinterest, Instagram
 - Ритейл: Wildberries, Ozon
 - Образование: Skyeng, Artly
-- Путешествие:2GIS, Aviata.kz
+- Путешествие:2GIS, Aviata.kz  
