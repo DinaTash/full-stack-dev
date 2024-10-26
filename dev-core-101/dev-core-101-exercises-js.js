@@ -7,7 +7,7 @@ let rl = readline.createInterface({
 
 // Игра "Угадай число"
 function number() {
-    rl.question('Введите число: ', (input) => {
+    rl.question('Введите число от 1 до 10: ', (input) => {
         let num = parseInt(input);
 
         if (num < 8) {
@@ -24,7 +24,7 @@ function number() {
 
 // Простое, составное
 function primeCheck() {
-    rl.question('Введите число для проверки на простое: ', (input) => {
+    rl.question('Введите число: ', (input) => {
         let num = parseInt(input);
 
         if (num <= 1) {
@@ -53,7 +53,7 @@ function convertTemperature() {
         let temp = parseInt(input);
         console.log(`${temp} ℃ = ${F(temp)} ℉`);
 
-        // Запрашиваем возраст
+       
         checkSchool();
     });
 }
@@ -75,7 +75,7 @@ function checkSchool() {
             console.log("Ты уже закончил школу.");
         }
 
-        // Закрываем интерфейс
+       
         rl.close();
     });
 }
