@@ -1,0 +1,42 @@
+<html>
+<head>
+    <header><title>Фото и видео</title></header>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Обо мне</a>
+        <a href="gallery.html">Галерея</a>
+        <a href="contact.html">Контактная форма</a>
+    </nav>
+    <br>
+    <span><h2>Ниже моё любимое фото за последнее время:</h2></span>
+    <br>
+    <img src="images\IMG.jpeg" alt="Рассвет" title="Небо" width="300">
+    <br>
+    <br>
+    <h2>Мельница "Сонный рыцарь"</h2>
+    <audio controls>
+        <source src="audio/music.mp3" type="audio/mpeg">
+        Ваш браузер не поддерживает элемент <code>audio</code>.
+    </audio>
+    <br><br>
+    <h2>Красивый вид</h2>
+    <video controls width="600">
+        <source src="video/movie.mp4" type="video/mp4">
+        Ваш браузер не поддерживает элемент <code>video</code>.
+    </video>
+    <br> <br>
+    <figure>
+        <img src="images/photo.jpg" alt=""Эустомы">
+        <figcaption>Эустомы</figcaption>
+    </figure>
+    <br> 
+    <canvas id="myCanvas" width="600" height="300"></canvas>
+<script>
+    var canvas = document.getElementById('myCanvas');
+    var context = canvas.getContext('2d');
+    context.fillStyle = 'orange';
+    context.fillRect(70, 70, 250, 250);
+</script>
+</body>
+</html>
