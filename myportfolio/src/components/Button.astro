@@ -1,9 +1,9 @@
 ---
-const { href, text } = Astro.props;
+const { href, text, isActive } = Astro.props;
 ---
 
-<a href={href}>
-  <button class="px-4 py-2 border border-gray-400 text-gray-900 rounded-md bg-transparent cursor-pointer transition-colors duration-200 ease-in-out hover:bg-gray-300">
-    {text}
-  </button>
+<a href={href} class="relative flex items-center gap-1 text-lg font-semibold text-[#8E8D8A] transition hover:text-[#E85A4F]">
+  <span>{text}</span>
+  {isActive && <span class="text-[#E85A4F] scale-60 origin-center relative top-1">▼</span>} 
+  <span class="absolute left-0 bottom-0 w-full h-0.5 bg-[#E85A4F] scale-x-0 transition-transform duration-300 hover:scale-x-100"></span>
 </a>

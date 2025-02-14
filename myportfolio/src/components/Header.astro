@@ -1,10 +1,12 @@
 ---
 import Button from "./Button.astro";
+
+const currentPage = Astro.url.pathname; // Получаем текущий путь страницы
 ---
 
-<div class="w-full flex space-x-5 h-20 pt-4 pb-4">
-  <Button href="/" text="Главная" />
-  <Button href="/about" text="Обо мне" />
-  <Button href="/projects" text="Проекты" />
-  <Button href="/contact" text="Контакты" />
+<div class="w-full flex justify-center space-x-8 h-24 items-center bg-[#EAE7DC]">
+  <Button href="/" text="Главная" isActive={currentPage === '/'} />
+  <Button href="/about" text="Обо мне" isActive={currentPage === '/about'} />
+  <Button href="/projects" text="Проекты" isActive={currentPage === '/projects'} />
+  <Button href="/contact" text="Контакты" isActive={currentPage === '/contact'} />
 </div>
