@@ -1,14 +1,28 @@
 ---
-import Header from "../components/Header.astro"
-import Footer from "../components/Footer.astro" 
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<Header/>
-	<h1> "Добро пожаловать about" </h1>
-	<Footer/>
+  <Header />
+  <div class="flex justify-center items-center min-h-screen bg-[#EAE7DC] p-6">
+    <div class="flex flex-col md:flex-row max-w-6xl w-full space-y-6 md:space-y-0 md:space-x-8">
+      <div class="text-center md:text-left space-y-6 flex flex-col justify-center md:w-1/2">
+        <h1 class="text-5xl font-caveat text-[#E85A4F]">Обо мне</h1>
+        <p class="text-lg text-[#5C5753] font-sans leading-relaxed">
+          Меня зовут Дина. Родилась в Казахстане, на данный момент живу в городе Уральск. По образованию я технолог перерабатывающих производств. Сейчас работаю оператором поддержки и обучаюсь разработке в школе "Owl masters".
+        </p>
+      </div>
+      <div class="text-center md:text-left space-y-6 flex flex-col justify-center md:w-1/2 bg-[#D8C3A5] p-6 rounded-lg shadow-lg">
+        <h2 class="text-4xl font-caveat text-[#E85A4F]">Мои увлечения</h2>
+        <ul class="text-lg text-[#5C5753] font-sans leading-relaxed list-disc list-inside">
+          <li>Готовка</li>
+          <li>Йога</li>
+          <li>Чтение</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <Footer />
 </Layout>
