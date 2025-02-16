@@ -1,14 +1,33 @@
 ---
-import Header from "../components/Header.astro"
-import Layout from '../layouts/Layout.astro';
-import Footer from "../components/Footer.astro" 
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Header from "../components/Header.astro";
+import Layout from "../layouts/Layout.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <Layout>
-	<Header/>
-	<h1> "Добро пожаловать 123" </h1>
-	<Footer/>
-</Layout>
+  <Header />
+  <div class="flex flex-col items-center justify-center min-h-screen bg-[#EAE7DC] p-6 text-center">
+    <h1 class="text-4xl font-caveat text-[#E85A4F] mb-4">
+      Проектов пока немного, но коллекция будет пополняться⟱
+    </h1>
+	<div class="flex flex-row items-center justify-center gap-6 mt-6">
+		<div class="text-center">
+		  <img src="../../public/project1.jpg" alt="Project 1" class="w-100 h-80 object-cover rounded-lg shadow-md" />
+		  <p class="mt-2 text-sm text-gray-700">Простой калькулятор.</p>
+		</div>
+		<div class="text-center">
+		  <img src="/project2.jpg" alt="Project 2" class="w-48 h-32 object-cover rounded-lg shadow-md" />
+		  <p class="mt-2 text-sm text-gray-700">Проект 2</p>
+		</div>
+		<div class="text-center">
+		  <img src="/project3.jpg" alt="Project 3" class="w-48 h-32 object-cover rounded-lg shadow-md" />
+		  <p class="mt-2 text-sm text-gray-700">Проект 3</p>
+		</div>
+	  </div>
+	  <a href="https://github.com/DinaTash/full-stack-dev" target="_blank" class="mt-6 text-lg font-semibold text-[#E85A4F] underline hover:text-[#D75A4F]">
+		Ссылка на проекты
+	  </a>
+	</div>
+	<Footer />
+  </Layout>
+  
