@@ -1,22 +1,27 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Header from "../components/Header.astro"
-import Footer from "../components/Footer.astro" 
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 import '@fontsource-variable/caveat';
-
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<Header/>
-	<div>
-		<h1 class="text-5xl font-caveat text-[#e85a4f]">Добро пожаловать!</h1>
-		<p class="font-comic text-lg m-0">
-					Рада видеть вас на моём сайте. Здесь вы можете узнать немного больше обо мне и познакомиться с моей деятельностью.
-		</p>
-		
-	</div>
-	<Footer/>
+  <Header />
+  <div class="flex justify-center items-center min-h-screen bg-[#EAE7DC] p-6">
+    <div class="flex items-center max-w-6xl w-full space-x-8">
+      <figure class="flex-shrink-0 relative w-48 h-48 md:w-72 md:h-72 bg-[#D8C3A5] rounded-r-full shadow-lg overflow-hidden">
+        <img class="absolute inset-y-0 left-0 h-full object-cover border-5 border-[#D8C3A5]" 
+             src="/foto.jpg" 
+             alt="Моё фото" 
+             width="512" height="640">
+      </figure>
+      <div class="text-center md:text-left space-y-6 flex flex-col justify-center">
+        <h1 class="text-5xl font-caveat text-[#E85A4F]">Добро пожаловать!</h1>
+        <p class="text-lg text-[#5C5753] font-sans leading-relaxed">
+          Рада видеть вас на моём сайте. Здесь вы можете узнать немного больше обо мне и познакомиться с моей деятельностью.
+        </p>
+      </div>
+    </div>
+  </div>
+  <Footer />
 </Layout>
