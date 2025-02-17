@@ -7,21 +7,27 @@ import Layout from '../layouts/Layout.astro';
 <Layout>
   <Header />
   <div class="flex justify-center items-center min-h-screen bg-[#EAE7DC] p-6">
-    <div class="flex flex-col md:flex-row max-w-6xl w-full space-y-6 md:space-y-0 md:space-x-8">
+    <div class="flex flex-col md:flex-row max-w-6xl w-full gap-6">
+      
+      
       <div class="text-center md:text-left space-y-6 flex flex-col justify-center md:w-1/2">
-        <h1 class="text-5xl font-caveat text-[#E85A4F]">Обо мне</h1>
-        <p class="text-lg text-[#5C5753] font-sans leading-relaxed">
-          Меня зовут Дина. Родилась в Казахстане, на данный момент живу в городе Уральск. По образованию я технолог перерабатывающих производств. Сейчас работаю оператором поддержки и обучаюсь разработке в школе "Owl masters".
+        <h1 class="text-4xl sm:text-5xl font-caveat text-[#E85A4F]">Обо мне</h1>
+        <p class="text-base sm:text-lg text-[#5C5753] font-sans leading-relaxed">
+          Меня зовут Дина. Родилась в Казахстане, на данный момент живу в городе Уральск. 
+          По образованию я технолог перерабатывающих производств. Сейчас работаю оператором 
+          поддержки и обучаюсь разработке в школе "Owl Masters".
         </p>
       </div>
-      <div class="text-center md:text-left space-y-6 flex flex-col justify-center md:w-1/2 bg-[#D8C3A5] p-6 rounded-lg shadow-lg">
-        <h2 class="text-4xl font-caveat text-[#E85A4F]">Мои увлечения</h2>
-        <ul class="text-lg text-[#5C5753] font-sans leading-relaxed list-disc list-inside">
+
+      <div class="text-center md:text-left flex flex-col justify-center md:w-1/2 bg-[#D8C3A5] p-4 sm:p-6 rounded-lg shadow-lg">
+        <h2 class="text-3xl sm:text-4xl font-caveat text-[#E85A4F]">Мои увлечения</h2>
+        <ul class="text-base sm:text-lg text-[#5C5753] font-sans leading-relaxed list-disc list-inside text-left md:text-left mx-auto md:mx-0 w-fit">
           <li>Готовка</li>
           <li>Йога</li>
           <li>Чтение</li>
         </ul>
       </div>
+
     </div>
   </div>
   <Footer />

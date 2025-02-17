@@ -1,2 +1,6 @@
-@import "@fontsource-variable/caveat";
+
 @import "tailwindcss";
+
+@theme {
+    --font-caveat: 'Caveat', 'sans-serif';
+  }

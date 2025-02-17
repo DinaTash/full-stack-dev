@@ -1,0 +1,9 @@
+---
+const { color } = Astro.props
+const selectedClass =color=="black" ? "bg-black" : "bg-red-500"
+---
+
+<div class=`flex flex-wrap justify-center gap-6 mt-6 ${selectedClass}`>
+  <slot/>
+  {color}
+  </div>
