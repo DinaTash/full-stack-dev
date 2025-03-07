@@ -6,11 +6,10 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout>
   <Header />
-  <div class="flex justify-center items-center min-h-screen bg-[#EAE7DC] p-6">
-    <div class="flex flex-col md:flex-row max-w-6xl w-full gap-6">
+  <div class="flex items-start justify-center h-[80vh] bg-[#EAE7DC] p-6 pt-30">
+    <div class="flex flex-col md:flex-row max-w-6xl w-full gap-6 items-start justify-center">
       
-      
-      <div class="text-center md:text-left space-y-6 flex flex-col justify-center md:w-1/2">
+      <div class="text-center md:text-left space-y-6 flex flex-col justify-start md:w-1/2 md:max-w-md mx-auto">
         <h1 class="text-4xl sm:text-5xl font-caveat text-[#E85A4F]">Обо мне</h1>
         <p class="text-base sm:text-lg text-[#5C5753] font-sans leading-relaxed">
           Меня зовут Дина. Родилась в Казахстане, на данный момент живу в городе Уральск. 
@@ -19,9 +18,9 @@ import Layout from '../layouts/Layout.astro';
         </p>
       </div>
 
-      <div class="text-center md:text-left flex flex-col justify-center md:w-1/2 bg-[#D8C3A5] p-4 sm:p-6 rounded-lg shadow-lg">
+      <div class="text-center md:text-left flex flex-col justify-start md:w-1/2 bg-[#D8C3A5] p-6 rounded-lg shadow-lg md:max-w-md mx-auto">
         <h2 class="text-3xl sm:text-4xl font-caveat text-[#E85A4F]">Мои увлечения</h2>
-        <ul class="text-base sm:text-lg text-[#5C5753] font-sans leading-relaxed list-disc list-inside text-left md:text-left mx-auto md:mx-0 w-fit">
+        <ul class="text-base sm:text-lg text-[#5C5753] font-sans leading-relaxed list-disc list-inside mx-auto md:mx-0">
           <li>Готовка</li>
           <li>Йога</li>
           <li>Чтение</li>

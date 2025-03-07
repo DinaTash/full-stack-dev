@@ -1,7 +1,12 @@
 ---
 import Button from "./Button.astro";
 
+
 const currentPage = Astro.url.pathname; // Получаем текущий путь стр
+
+const handleClick = () => {
+  alert("Button clicked!");
+};
 ---
 
 <div class="w-full flex justify-center space-x-4 sm:space-x-6 md:space-x-8 h-20 md:h-24 items-center bg-[#EAE7DC] px-4">
@@ -9,4 +14,30 @@ const currentPage = Astro.url.pathname; // Получаем текущий пу�
   <Button href="/about" text="Обо мне" isActive={currentPage === '/about'} />
   <Button href="/projects" text="Проекты" isActive={currentPage === '/projects'} />
   <Button href="/contact" text="Контакты" isActive={currentPage === '/contact'} />
+  <button class="alert">
+    Dark 
+  
+  </button>
+
 </div>
+
+<script> 
+  const button = document.querySelector('button.alert');
+  button.addEventListener('click', () => {
+    // document.documentElement.classList.toggle(
+    // "dark",
+    // localStorage.theme === "dark" || (!("theme" in localStorage)));
+    document.documentElement.classList.toggle(
+    "dark",
+    !localStorage.theme );
+
+   if (localStorage.theme) {
+    localStorage.removeItem("theme")
+    
+   } else { 
+    localStorage.theme = "dark"
+   }
+
+
+  });
+</script>

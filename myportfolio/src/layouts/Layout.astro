@@ -7,7 +7,7 @@ import "@fontsource-variable/caveat"
 
 ---
 <!doctype html>
-<html lang="ru">
+<html lang="ru" >
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />  
@@ -17,9 +17,9 @@ import "@fontsource-variable/caveat"
 		<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
 
 		<meta name="generator" content={Astro.generator} />
-		<title>Портфолио</title>
+		<title>Дина Ташенова</title>
 	</head>
-	<body class="bg-[#EAE7DC] m-0 p-0 h-screen w-full flex flex-col">
+	<body class="bg-[#EAE7DC] dark:bg-gray-800 m-0 p-0 h-screen w-full flex flex-col">
 		<div class="w-full max-w-screen px-4">
 			<slot />
 		</div>
@@ -27,4 +27,13 @@ import "@fontsource-variable/caveat"
 	</body>
 </html>
 
-
+<script> 
+	console.log(localStorage.theme)
+	if (localStorage.theme === "dark") { 
+		document.documentElement.classList.toggle(
+    "dark",
+    true);
+		console.log("")
+	}
+	
+  </script>

@@ -6,24 +6,19 @@ import Footer from "../components/Footer.astro";
 ---
 
 <Layout>
-  <Header />
-  <div class="flex justify-center items-center min-h-screen bg-[#EAE7DC] p-6">
-    <div class="flex flex-col md:flex-row items-center max-w-4xl w-full space-y-6 md:space-y-0 md:space-x-8">
-      <figure class="flex-shrink-0 relative w-40 h-40 sm:w-56 sm:h-56 md:w-72 md:h-72 bg-[#D8C3A5] rounded-r-full shadow-lg overflow-hidden">
-        <img class="absolute inset-y-0 left-0 h-full object-cover border-5 border-[#D8C3A5]" 
-             src="/foto.jpg" 
-             alt="Моё фото" 
-             width="512" height="640">
-      </figure>
-      <div class="text-center md:text-left space-y-6 flex flex-col justify-center">
-        <h1 class="text-3xl sm:text-4xl md:text-5xl font-caveat text-[#E85A4F] text-center md:text-left">
-           Добро пожаловать!
-        </h1>
-        <p class="text-lg text-[#5C5753] font-sans leading-relaxed">
-          Рада видеть вас на моём сайте. Здесь вы можете узнать немного больше обо мне и познакомиться с моей деятельностью.
-        </p>
-      </div>
+  <Header client:load />
+  <div class="bg-[#EAE7DC] dark:bg-gray-800 min-h-screen p-4">
+    
+    <div class="max-w-5xl w-full mt-30 space-y-6 text-center md:text-left md:max-w-2/3 pl-40">
+      <h1 class="text-5xl dark:text-white sm:text-6xl font-caveat text-[#E85A4F]">
+        Добро пожаловать!
+      </h1>
+      <p class="text-xl text-[#5C5753] font-sans leading-relaxed">
+        Рада видеть вас на моём сайте. Здесь вы можете узнать немного больше обо мне и познакомиться с моей деятельностью.
+      </p>
     </div>
+
   </div>
   <Footer />
 </Layout>
+
